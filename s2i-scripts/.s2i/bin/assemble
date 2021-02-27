@@ -13,8 +13,8 @@ config_s2i
 echo "Actual absolute path"
 pwd
 
-echo "Actual sources"
-ls /tmp/src
+echo "Actual extracted files"
+ls -R /tmp
 
 echo "---> Installing application source"
 cp -Rf /tmp/src/*.html ./
