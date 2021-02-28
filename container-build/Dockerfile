@@ -3,9 +3,9 @@ FROM quay.io/redhattraining/httpd-parent
 
 EXPOSE 8080
 
-LABEL io.openshift.expose-services="8080:http"
-      io.openshift.tags="httpd, apache"
-      io.k8s.description="Child image"
+LABEL io.openshift.expose-services="8080:http" && \
+      io.openshift.tags="httpd, apache" && \ 
+      io.k8s.description="Child image" && \
       io.k8s.display-name="Apache HTTP Server"
 
 ENV DIRS /var/log/httpd /var/run/httpd
