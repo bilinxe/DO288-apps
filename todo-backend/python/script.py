@@ -1,1 +1,0 @@
-print("EX288 POST COMMIT HOOK!")
